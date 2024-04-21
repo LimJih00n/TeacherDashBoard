@@ -1,0 +1,48 @@
+.lecture-notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center boxes horizontally */
+    padding: 10px; /* Padding for the container */
+    gap: 10px; /* Adds space between the boxes */
+  }
+  
+  .note-box {
+    background-color: #f0f0f0; /* Light gray background */
+    border: 1px solid #ccc; /* Optional border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Changes the mouse cursor on hover */
+  
+    /* Use flex-basis instead of width to work with flex-wrap */
+    flex-basis: calc(25% - 10px); /* Adjust the size of the box */
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 10%;
+    height: 10%; /* Collapse the original height */
+    overflow: hidden; /* Prevents content from overflowing */
+    margin-bottom: 10px; /* Space at the bottom for when they wrap */
+  }
+  
+  .note-box::before {
+    content: '';
+    display: block;
+    margin-top: 100%; /* Maintains the aspect ratio to be a square */
+  }
+  
+  .note-box > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .note-box {
+      flex-basis: calc(50% - 10px); /* Adjust for smaller screens */
+    }
+  }
+  

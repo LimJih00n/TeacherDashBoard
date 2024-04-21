@@ -1,0 +1,23 @@
+.main-board{
+    height: 95%;
+}
+.body {
+margin-top: 10px;
+display: flex;
+flex-direction: row;
+gap: 1%;
+}
+
+.left-container, .center-container, .right-container {
+    height: 600px;
+}
+
+.left-container {
+flex: 20%;
+}
+
+
+.right-container {
+flex: 80%;
+
+}

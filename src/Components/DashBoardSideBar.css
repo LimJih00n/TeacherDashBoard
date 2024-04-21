@@ -1,0 +1,33 @@
+.sidebar {
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+    border-radius: 10px;
+    background-color: black;
+}
+.sidebarWrapper {
+    display: flex;
+    flex-direction: column;
+}
+.sidebar-content {
+    justify-content: center;
+    align-items: center; /* This ensures vertical centering */
+    display: flex;
+    color: #00f224;
+    padding-top: 30px;
+    cursor: pointer; /* Makes it clear that the area is clickable */
+}
+.sidebarTitle {
+    font-family: Noto Sans Mono;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00f224;
+}
+.sidebarIcon {
+    display: flex;
+    align-items: center; /* Ensure this is added or confirmed */
+    justify-content: center;
+    padding-top: 0px; /* Adjust padding if necessary */
+    margin-left: 10px; /* Optionally add some space between text and icon */
+}

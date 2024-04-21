@@ -1,0 +1,42 @@
+.class-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between class boxes */
+    padding: 20px;
+}
+
+.class-box {
+    width: calc(33.333% - 10px); /* Minus the gap size */
+    height: 150px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #aaa;
+    cursor: pointer;
+}
+
+.class-box.add-new {
+    background-color: #add8e6;
+    border: 2px dashed #777;
+}
+
+/* Modal styles */
+.Modal {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    background: white;
+    padding: 20px;
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
