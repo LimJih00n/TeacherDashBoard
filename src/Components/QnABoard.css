@@ -1,0 +1,8 @@
+.qna-board {
+    margin: 20px;
+  }
+  
+  .qna-board .ck-editor__editable {
+    min-height: 300px;
+  }
+  
